@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Focus Space | Productivity Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar">
+
+            <h2 class="logo">FOCUS<span>SPACE.</span></h2>
+
+            <nav class="menu">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#tasks">My Tasks</a>
+                <a href="#timer">Focus Timer</a>
+                <a href="#progress">Progress</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <p>Designed for focus.</p>
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+                <p>YOUR PERSONAL WORKSPACE</p>
+                <button id="theme-toggle" type="button">Change Theme</button>
+            </header>
+
+            <section id="dashboard" class="welcome">
+                <p class="eyebrow">PRODUCTIVITY DASHBOARD</p>
+                <h1>Make space<br>for what matters.</h1>
+                <p>Organize your tasks, stay focused and make progress every day.</p>
+            </section>
+
+            <section class="dashboard-grid">
+
+                <div id="tasks" class="card">
+                    <h2>My Tasks</h2>
+                    <p>Everything you need to get done.</p>
+
+                    <div class="task-input">
+                        <input type="text" id="task-name" placeholder="Add a new task...">
+                        <button id="add-task" type="button">Add Task</button>
+                    </div>
+
+                    <ul id="task-list"></ul>
+                </div>
+
+                <div id="timer" class="card">
+                    <h2>Focus Timer</h2>
+                    <p>Stay present. Stay productive.</p>
+
+                    <div class="timer-circle">
+
+    <svg class="timer-svg" viewBox="0 0 220 220">
+
+        <circle
+            class="timer-track"
+            cx="110"
+            cy="110"
+            r="95">
+        </circle>
+
+        <circle
+            class="timer-progress"
+            id="timer-progress"
+            cx="110"
+            cy="110"
+            r="95">
+        </circle>
+
+    </svg>
+
+    <div class="timer-content">
+        <span class="timer-display" id="timer-display">25:00</span>
+        <span class="timer-label">FOCUS SESSION</span>
+    </div>
+
+</div>
+
+                    <div class="timer-buttons">
+                        <button id="start-timer" type="button">Start</button>
+                        <button id="pause-timer" type="button">Pause</button>
+                        <button id="reset-timer" type="button">Reset</button>
+                    </div>
+                </div>
+
+                <div id="progress" class="card">
+                    <h2>Your Progress</h2>
+                    <p>Small steps lead to big results.</p>
+
+                    <div class="progress-number" id="progress-number">0%</div>
+<div class="card statistics-card">
+
+    <h2>Productivity Statistics</h2>
+    <p>Your work in numbers.</p>
+
+    <div class="statistics-grid">
+
+        <div class="stat-item">
+            <span id="total-tasks">0</span>
+            <p>Total Tasks</p>
+        </div>
+
+        <div class="stat-item">
+            <span id="completed-tasks">0</span>
+            <p>Completed</p>
+        </div>
+
+        <div class="stat-item">
+            <span id="focus-sessions">0</span>
+            <p>Focus Sessions</p>
+        </div>
+
+    </div>
+
+</div>
+                    <div class="progress-bar">
+                        <div id="progress-fill"></div>
+                    </div>
+                </div>
+
+            </section>
+<footer class="app-footer">
+
+    <div class="footer-left">
+        <span class="footer-logo">FOCUS SPACE.</span>
+        <p>Make every moment count.</p>
+    </div>
+
+    <div class="footer-right">
+        <span>DESIGNED & DEVELOPED BY ANASTASIA</span>
+        <span>© 2026 FOCUS SPACE</span>
+    </div>
+
+</footer>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
